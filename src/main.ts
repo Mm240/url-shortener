@@ -85,8 +85,7 @@ async function bootstrap() {
   // Enable shutdown hooks
   // app.enableShutdownHooks();
 
-  await app.listen(PORT);
-  // const server = app.getHttpServer();
+  await app.listen(PORT, '0.0.0.0');  // const server = app.getHttpServer();
   // const router = server._events.request._router;
   // const routes = router.stack
   //   .filter((layer) => layer.route)
